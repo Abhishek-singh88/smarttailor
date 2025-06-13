@@ -61,7 +61,7 @@ export default function CustomerHome() {
       </header>
 
       <button
-        className="bg-green-600 hover:bg-green-700 py-2 px-4 rounded mb-6"
+        className="bg-green-600 hover:bg-green-700 py-2 px-4 rounded mb-6 cursor-pointer"
         onClick={() => setShowModal(true)}
       >
         + Create Order
@@ -95,7 +95,7 @@ export default function CustomerHome() {
         </td>
         <td className="px-4 py-2 border-b border-gray-700">
           <button
-            className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-xs"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-xs cursor-pointer"
             onClick={() => {
               setOrderToReorder(order);
               setShowConfirm(true);
@@ -142,13 +142,13 @@ export default function CustomerHome() {
             <div className="flex justify-end gap-2">
               <button
                 onClick={() => setShowConfirm(false)}
-                className="px-4 py-2 bg-gray-400 rounded"
+                className="px-4 py-2 bg-gray-400 rounded cursor-pointer"
               >
                 Cancel
               </button>
               <button
                 onClick={handleReorder}
-                className="px-4 py-2 bg-blue-600 text-white rounded"
+                className="px-4 py-2 bg-blue-600 text-white rounded cursor-pointer"
               >
                 Confirm
               </button>
