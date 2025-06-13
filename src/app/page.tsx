@@ -15,13 +15,13 @@ export default function Home() {
       <div className="flex flex-col gap-4 w-full max-w-sm">
         <button
           onClick={() => router.push("/auth/tailor")}
-          className="bg-blue-600 hover:bg-blue-700 py-3 px-4 rounded-xl text-base font-semibold w-full"
+          className="bg-blue-600 hover:bg-blue-700 py-3 px-4 rounded-xl text-base font-semibold w-full cursor-pointer"
         >
           Login / Sign Up as Tailor
         </button>
         <button
           onClick={() => router.push("/auth/customer")}
-          className="bg-green-600 hover:bg-green-700 py-3 px-4 rounded-xl text-base font-semibold w-full"
+          className="bg-green-600 hover:bg-green-700 py-3 px-4 rounded-xl text-base font-semibold w-full cursor-pointer"
         >
           Login / Sign Up as Customer
         </button>

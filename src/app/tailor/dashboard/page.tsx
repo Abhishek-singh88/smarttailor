@@ -60,7 +60,7 @@ export default function TailorDashboard() {
         <h1 className="text-3xl font-bold">Welcome, {tailor?.name || "Tailor"}!</h1>
         <button
           onClick={handleLogout}
-          className="bg-red-600 hover:bg-red-700 px-4 py-2 rounded"
+          className="bg-red-600 hover:bg-red-700 px-4 py-2 rounded cursor-pointer"
         >
           Logout
         </button>
@@ -122,13 +122,13 @@ export default function TailorDashboard() {
             <div className="flex justify-end gap-2">
               <button
                 onClick={() => setShowConfirmModal(false)}
-                className="px-4 py-2 bg-gray-400 rounded"
+                className="px-4 py-2 bg-gray-400 rounded cursor-pointer"
               >
                 Cancel
               </button>
               <button
                 onClick={confirmStatusUpdate}
-                className="px-4 py-2 bg-green-600 text-white rounded"
+                className="px-4 py-2 bg-green-600 text-white rounded cursor-pointer"
               >
                 Confirm
               </button>
