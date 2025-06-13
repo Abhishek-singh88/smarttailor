@@ -77,7 +77,7 @@ export default function CustomerAuth() {
         />
         <button
           type="submit"
-          className="bg-green-600 hover:bg-green-700 py-2 rounded"
+          className="bg-green-600 hover:bg-green-700 py-2 rounded cursor-pointer"
           disabled={loading}
         >
           {loading ? "Redirecting..." : "Continue"}
