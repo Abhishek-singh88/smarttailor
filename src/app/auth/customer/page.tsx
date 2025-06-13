@@ -30,6 +30,7 @@ export default function CustomerAuth() {
     }
 
     if (res.ok && data.user) {
+       localStorage.setItem("customer", JSON.stringify(data.user));
       router.push("/customer/Home");
     } else {
       alert(data.error || "Registration failed.");
