@@ -30,6 +30,7 @@ export default function CustomerAuth() {
     }
 
     if (res.ok && data.user) {
+      localStorage.setItem("tailor", JSON.stringify(data.user));
       router.push("/tailor/dashboard");
     } else {
       alert(data.error || "Registration failed.");
